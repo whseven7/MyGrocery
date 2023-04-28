@@ -1,0 +1,50 @@
+.sidebar {
+    position: fixed;
+    /* background-color: rgb(70, 185, 44); */
+    background-color: rgb(206, 170, 104);
+    top: 100px;
+    bottom: 0;
+    left: 0;
+    width: 250px;
+}
+
+.sidebar-content {
+    list-style: none;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    /* background: blanchedalmond; */
+}
+
+.category {
+    list-style: none;
+    margin-bottom: 10px;
+    color: white;
+}
+
+/* .sub-category {
+    list-style: none;
+    margin-bottom: 10px;
+} */
+
+.sub-category a {
+    color: white;
+    /* text-decoration: none; */
+}
+
+.category a {
+    color: white;
+    text-decoration: none;
+}
+
+.bx-down-arrow {
+    float: right;
+    margin-right: 5px;
+    cursor: pointer;
+    z-index: -1;
+}
+
+.drop-down {
+    /* display: none; */
+    float: right; 
+}

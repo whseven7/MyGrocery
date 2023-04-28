@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Grocery</title>
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/body.css">
+    <link rel="stylesheet" href="/css/general.css">
+    <link rel="stylesheet" href="/css/sidebar.css">
+    <link rel="stylesheet" href="/css/shopping-cart.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="header-left">
+                <img src="/Pictures/logo.png" class="logo">
+                <div class="logo-name">My Grocery</div>
+            </div>
+            <div class="header-mid">
+                <input type="text" class="searchbar" placeholder="Search">
+                <button class="search-logo-box">
+                    <img src="/Pictures/search.png" class="search-logo">
+                </button>
+            </div>
+            <div class="header-right">
+                <a href="/html/grocery.html" class="top-menu" id="highlight">Home</a>
+                <a href="/html/shop.html" class="top-menu">Shop</a>
+                <i class='bx bx-shopping-bag'  id="add-to-cart"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="sidebar">
+        <ul class="sidebar-content">
+            <li for="btn" class="category">Category</li>
+            <li class="category"> <a href="/html/beverages-product.html">Beverages</a>
+                <i class='bx bx-down-arrow'></i>
+                <!-- <input type="checkbox" id="btn" class="drop-down"> -->
+                <ul class="list-dropdown">
+                    <li class="category"> <a href="/html/beverages-product.html#Juices">Juices</a></li>
+                    <li class="category"> <a href="/html/beverages-product.html#soft-drink">Soft Drink</a></li>
+                </ul>
+            </li>
+            <li for="btn-2" class="category"> <a href="fresh-food-product.html">Fresh-Food</a>
+                <i class='bx bx-down-arrow'></i>
+                <!-- <input type="checkbox" id="btn-2" class="drop-down"> -->
+                <ul class="list-dropdown">
+                    <li class="category"> <a href="/html/fresh-food-product.html#fruits">Fruits</a></li>
+                    <li class="category"> <a href="/html/fresh-food-product.html#vegetables">Vegetables</a></li>
+                </ul>
+            </li>
+            <li for="btn-3" class="category"> <a href="frozen-food.html">Frozen-Food</a>
+                <i class='bx bx-down-arrow'></i> 
+                <!-- <input type="checkbox" id="btn-3" class="drop-down"> -->
+                <ul class="list-dropdown">
+                    <li class="category"> <a href="/html/frozen-food.html#frozen-fruit">Frozen Fruit</a></li>
+                    <li class="category"> <a href="/html/frozen-food.html#deep-fried">Deep Fried</a></li>
+                </ul>
+            </li>
+            <li for="btn-4" class="category"> <a href="/html/home-health-product.html">Home-Health</a>
+                <i class='bx bx-down-arrow'></i>
+                <!-- <input type="checkbox" id="btn-4" class="drop-down"> -->
+                <ul class="list-dropdown">
+                    <li class="category"> <a href="/html/home-health-product.html#detergent">Detergent</a></li>
+                    <li class="category"> <a href="/html/home-health-product.html#shampoo">Shampoo & Body Wash</a></li>
+                    <li class="category"> <a href="/html/home-health-product.html#vitamins">Vitamins</a></li>
+                </ul>
+            </li>
+            <li for="btn-5" class="category"> <a href="/html/pet-food-product.html">Pet-Food</a>
+                <i class='bx bx-down-arrow'></i>
+                <!-- <input type="checkbox" id="btn-5" class="drop-down"> -->
+                <ul class="list-dropdown">
+                    <li class="category"> <a href="/html/pet-food-product.html#catfood">Cat Food</a></li>
+                    <li class="category"> <a href="/html/pet-food-product.html#dogfood">Dog Food</a></li>
+                </ul>
+            </li>
+        <!-- </ul> -->
+    </div>
+
+        <div class="title-page-box">
+            <h1 class="title-page">My Grocery</h1>
+        </div>
+        <div class="pictures">
+            <img src="/Pictures/farm-background.png" alt="" class="background-picture">
+            <img src="/Pictures/fresh-product-background.png" alt="" class="background-picture">
+        </div>
+        <div class="title-page-box">
+            <h1 class="title-page">Our Top Products</h1>
+        </div>
+        <div class="body-content">
+            <div class="content-preview">
+                <div class="col1">
+                    <img src="/Pictures/Beverages/monster.png" class="product-picture">
+                    <h3 class="product-name">Monster 15can</h3>
+                    <div class="product-price">$50</div>
+                    <div class="product-stock">In Stock</div>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+            </div>
+            
+            <div class="content-preview">
+                <a name="fruits"></a>
+                <div class="col1">
+                    <img src="/Pictures/Fresh-Food/apple-0.png" class="product-picture">
+                    <h3 class="product-name">Apple 10kg</h3>
+                    <div class="product-price">$30</div>
+                    <div class="product-stock">In Stock</div>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+            </div>
+
+            <div class="content-preview">
+                <div class="col1">
+                    <img src="/Pictures/Pet-Food/cat-food-3.png" class="product-picture">
+                    <h3 class="product-name">Wonder Bound</h3>
+                    <div class="product-price">$38.9</div>
+                    <div class="product-stock">In Stock</div>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+            </div>
+
+            <div class="content-preview">
+                <div class="col1">
+                    <img src="/Pictures/Home-Health/vitamin-d-0.png" class="product-picture">
+                    <h3 class="product-name">Blackmores vitamin d3</h3>
+                    <div class="product-price">$14.9</div>
+                    <div class="product-stock">In Stock</div>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+            </div>
+        </div>
+        
+
+    <div class="cart">
+        <h2 class="cart-title">Your Cart</h2>
+        <div class="cart-content">
+        </div>
+        <!--Total-->
+        <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">$0</div>
+        </div>
+        <button class="clear-cart">Clear All</button>
+        <!--Buy Button-->
+        <button type="button" class="btn-buy">Buy Now</button>
+        
+        <!--Cart Clos-->
+        <i class='bx bx-x' id="close-cart"></i>
+    </div>
+    <script src="/js/grocery.js"></script>
+</body>
+</html>

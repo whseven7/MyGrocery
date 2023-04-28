@@ -1,0 +1,60 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: aquamarine;
+}
+
+.container {
+    width: 350px;
+    background-color: #ffff;
+    padding: 30px;
+    position: relative;
+}
+
+h6 {
+    font-size: 20px;
+}
+
+span {
+    position: absolute;
+    right: 24px;
+    top: 28px;
+    font-size: 18px;
+}
+
+h1 {
+    padding: 30px 0;
+    font-size: 40px;
+}
+
+form label {
+    text-transform: uppercase;
+    position: relative;
+    font-size: 10px;
+    word-spacing: 4px;
+}
+
+form .setting {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid;
+    padding-top: 5px;
+    margin-bottom: 20px;
+    padding-right: 30px;
+    font-size: 18px;
+    background-color: transparent;
+    padding-bottom: 5px;
+}
+
+.float {
+    display: flex;
+}
+
+.website {
+    text-decoration: none;
+    color: black;
+}
+
