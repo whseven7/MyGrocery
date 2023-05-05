@@ -2,6 +2,8 @@
 let cartIcon = document.querySelector('#add-to-cart');
 let cart = document.querySelector('.cart');
 let closeCart = document.querySelector('#close-cart');
+let buttons = document.querySelector('.btn-buy');
+
 
 // open cart
 cartIcon.onclick = () => {
@@ -11,6 +13,7 @@ cartIcon.onclick = () => {
 closeCart.onclick = () => {
     cart.classList.remove('active');
 };
+
 
 if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', ready)
@@ -44,7 +47,8 @@ function ready() {
         let button = addCarts[i];
         button.addEventListener('click', addCartsClicked);
     } 
-    
+
+    buttons.classList.add('hide-btn');
     document.getElementsByClassName('btn-buy')[0]
     .addEventListener('click', buyButtonClicked);
 
@@ -53,6 +57,14 @@ function ready() {
 }
 
 localStorage.setItem('cart', cart);
+
+function showBuyButton(total) {
+    if (total > 0) {
+        buttons.classList.remove('hide-btn');
+    } else {
+        buttons.classList.add('hide-btn');
+    }
+}
 
 function buyButtonClicked() {
     let cartContent = document.getElementsByClassName('cart-content')[0];
@@ -162,6 +174,7 @@ function updateTotal() {
         //if price contains some cents
         total = Math.round(total *100) / 100;
         document.getElementsByClassName('total-price')[0].innerText = "$" + total;
+        showBuyButton(total);
 }   
 
 function nameS() {

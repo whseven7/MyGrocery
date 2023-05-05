@@ -89,6 +89,10 @@
     color: white;
 }
 
+.hide-btn {
+    display: none;
+}
+
 .btn-buy:hover {
     background-color: black;
 }
