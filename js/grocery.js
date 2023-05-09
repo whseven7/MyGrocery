@@ -56,7 +56,6 @@ function ready() {
     .addEventListener('click', clearButtonClicked);
 }
 
-localStorage.setItem('cart', cart);
 
 function showBuyButton(total) {
     if (total > 0) {
